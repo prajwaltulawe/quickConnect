@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.cointainer{
+    width: 100%;
+    height: 100vh;
+    max-width: 400px;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(270deg, #4159d056, #c850c09f, #ffcd70cb, #0094e9d7, rgba(128, 208, 199, 0.856), #ffe53bb6, #ff2525d7, rgba(97,186,255,1), rgba(166, 238, 253, 0.87), rgba(255, 94, 247, 0.836), rgba(2, 247, 255, 0.87), #f193fbd5, #f5576cda ) repeat scroll 0% 0% / 6000% 6000%;
+    animation: 120s ease 0s infinite normal none running gradient-move;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+    
+@keyframes gradient-move {
+    0%{  
+        background-position: 0% 50%;  
+    }
+    50%{        
+        background-position: 50% 100%;  
+    }
+    100%{
+        background-position: 100% 0%;  
+    }
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    animation: main-in 1s linear forwards;
+}
+
+@keyframes main-in {
+    0%{ opacity: 0;}
+    50%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+.circle{
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: fixed;    
+    animation: circle-in 1s linear forwards ;
+    transform: rotate(55deg);
+}
+
+@keyframes circle-in {
+    0%{ width: 0; height: 0; top: 95vh; }
+    50%{   width: 120vh; height: 120vh; top: -10%; }
+    100%{   }
+} 
+
+.box{
+    width: 50vh;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: fixed;    
+    animation: box-in 1s linear forwards ;
+    transform: rotate(55deg);
+}
+
+@keyframes box-in {
+    0%{ top: 100%;  left: 100%;  }
+    50%{ top: 100%;  left: 100%;  }
+    100%{top: -100%;  left: -100%; }
+} 
+
+.lines{
+    width: 100%;
+    height: .3%;
+    background-color: rgb(255, 255, 255);
+    margin: 2%;
+    transform: rotate(-55deg);
+    position: relative;
+    top: 100%;
+    left: -70%;
+}
+
+#line-one{
+    animation:  line-in 1s linear forwards ;
+}
+
+#line-two{
+    animation:  line-in 1s linear forwards ;
+}
+
+#line-three{
+    animation:  line-in 1s linear forwards ;
+}
+
+.main-img{
+    display: flex;
+    margin: 0 auto 0 auto;
+}
+
+.main-img img{
+    width: 70%;
+    margin: 5% auto 0 auto;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+
+.socials svg{
+    padding: 15%;
+    transition: all 0.2s;
+}
+
+.socials svg:hover{
+    scale: 1.2;
+}
+
+.socials svg a:visited{
+    color: white;
+}
