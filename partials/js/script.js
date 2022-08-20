@@ -43,7 +43,7 @@ function waitForData(x) {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(x);
-      }, 5000);
+      }, 3000);
     });
 }
   
